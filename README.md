@@ -48,33 +48,30 @@
 
 ## 📁 Estructura del proyecto
 
-frontend/
-│
-├── 📄 index.html                    # HTML principal
-├── ⚙️ vite.config.js               # Configuración de Vite
-├── 📦 package.json                 # Dependencias (Vue, Vite)
-├── 📦 package-lock.json            # Lock de dependencias
-├── 🙈 .gitignore                   # Archivos ignorados
-│
-└── 📂 src/
-    │
-    ├── 🚀 main.js                  # Punto de entrada Vue
-    ├── 🧩 App.vue                  # Componente raíz
-    │
-    ├── 📂 assets/
-    │   └── 🎨 styles.css          # Estilos globales
-    │
-    └── 📂 components/              # Componentes Vue
-        │
-        ├── 🔷 Navbar.vue           # Barra de navegación
-        ├── 🎠 Slider.vue           # Carrusel de imágenes
-        ├── 🎓 Facilidades.vue      # Sección de facilidades
-        ├── ⚡ Solutions.vue        # Soluciones rápidas
-        ├── 👥 Community.vue        # Comunidad Unieccista
-        ├── 📰 News.vue             # Noticias
-        ├── 🎉 UniversityLife.vue   # Vida universitaria
-        ├── 📅 Agenda.vue           # Agenda de eventos
-        └── 🏛️ FooterInstitutional.vue # Pie de página institucional
+## 📁 Estructura del proyecto
+
+| Ruta | Descripción |
+|------|-------------|
+| `frontend/` | Raíz del proyecto frontend |
+| ├─ `index.html` | Punto de entrada HTML |
+| ├─ `vite.config.js` | Configuración de Vite |
+| ├─ `package.json` | Dependencias y scripts |
+| ├─ `.gitignore` | Archivos ignorados por Git |
+| └─ `src/` | Código fuente principal |
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ `main.js` | Punto de entrada de la app |
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ `App.vue` | Componente raíz |
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ `assets/` | Recursos estáticos |
+| &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─ `styles.css` | Estilos globales |
+| &nbsp;&nbsp;&nbsp;&nbsp;└─ `components/` | Componentes Vue reutilizables |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Navbar.vue` | Barra de navegación |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Slider.vue` | Carrusel principal |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Facilidades.vue` | Sección de facilidades |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Solutions.vue` | Soluciones rápidas |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Community.vue` | Comunidad Unieccista |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `News.vue` | Noticias destacadas |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `UniversityLife.vue` | Vida universitaria |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Agenda.vue` | Agenda universitaria |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ `FooterInstitutional.vue` | Pie de página |
 
 ## ⚙️ Instalación y uso local
 
