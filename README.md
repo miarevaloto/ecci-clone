@@ -76,12 +76,12 @@
 ## ⚙️ Instalación y uso local
 
 ### Prerrequisitos
-
 - Node.js (versión 18 o superior)
 - npm o yarn
 
 ### Pasos de instalación
 
+```bash
 # 1. Clonar el repositorio
 git clone https://github.com/TU_USUARIO/ecci-clone.git
 
@@ -93,7 +93,7 @@ npm install
 
 # 4. Iniciar servidor de desarrollo
 npm run dev
-La aplicación estará disponible en http://localhost:5173 🔥
+🔥 La aplicación estará disponible en http://localhost:5173
 
 📜 Scripts disponibles
 Comando	Descripción
@@ -101,32 +101,32 @@ npm run dev	Inicia servidor de desarrollo con hot-reload
 npm run build	Genera build de producción en dist/
 npm run preview	Previsualiza el build de producción localmente
 🚢 Despliegue en Vercel
-Configuración automática
-Sube tu código a GitHub
-
+1️⃣ Sube tu código a GitHub
+bash
 git add .
 git commit -m "Initial commit"
 git push origin main
-Importa el proyecto en Vercel
-
+2️⃣ Importa el proyecto en Vercel
 Ve a vercel.com
 
-Click en "Add New" → "Project"
+Haz clic en "Add New" → "Project"
 
 Selecciona tu repositorio
 
-Configuración recomendada
-
+3️⃣ Configuración recomendada
 Parámetro	Valor
 Framework Preset	Vite
 Root Directory	frontend
 Build Command	npm run build
 Output Directory	dist
-¡Listo! Vercel generará una URL como:
+4️⃣ ¡Listo!
+Vercel generará una URL como:
 
+text
 https://ecci-clone.vercel.app
-Actualizaciones automáticas
-Cada git push a tu repositorio activará un nuevo despliegue automático en Vercel. 🔄
+
+🔄 Actualizaciones automáticas
+Cada git push a tu repositorio activará un nuevo despliegue automático en Vercel.
 
 📝 .gitignore incluido
 gitignore
@@ -137,6 +137,7 @@ dist-ssr/
 .vscode/
 .idea/
 .DS_Store
+
 🎯 Resultado esperado
 ✅ Interfaz completa desde navbar hasta footer
 
@@ -153,19 +154,18 @@ Este proyecto es de uso educativo y demostrativo. No está afiliado oficialmente
 Desarrollado como proyecto de portafolio utilizando Vue 3 y Vite.
 
 Demo en vivo: https://ecci-clone.vercel.app
+
 Repositorio: github.com/TU_USUARIO/ecci-clone
 
 ⭐ ¡Si te gusta este proyecto, no olvides darle una estrella en GitHub!
 
-## 🔧 Mejoras realizadas
+text
 
-1. **Header visual** - Añadidos badges tecnológicos y un banner de vista previa
-2. **Tablas** - Para mostrar scripts y configuraciones de forma más clara
-3. **Emojis y iconos** - Mejoran la legibilidad visual
-4. **Estructura jerárquica** - Uso consistente de `##`, `###` y `---`
-5. **Código resaltado** - Bloques `bash` y `gitignore` con sintaxis correcta
-6. **Sección de créditos** - Links de demo y repositorio
-7. **Llamada a la acción** - Estrella de GitHub al final
-8. **Información en columnas** - Para tecnologías y configuraciones
+## 🔑 Los problemas que corregí:
 
-Simplemente reemplaza `TU_USUARIO` con tu nombre de usuario de GitHub y el README estará listo para impresionar en tu repositorio. ¿Necesitas que ajuste algún detalle más?
+1. **Bloques de código mal cerrados** - Ahora cada ` ```bash ` tiene su ` ``` ` de cierre
+2. **Saltos de línea incorrectos** - Separé las secciones con `---` para mayor claridad
+3. **Texto suelto** - Moví "La aplicación estará disponible" fuera del bloque de código
+4. **Jerarquía visual** - Usé `###` para subsecciones y `---` como separadores
+5. **Listas numeradas** - Usé `1️⃣ 2️⃣ 3️⃣ 4️⃣` para los pasos de Vercel
+6. **Enlaces** - Formateé correctamente los links con `[texto](url)`
