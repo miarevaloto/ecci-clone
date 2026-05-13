@@ -48,9 +48,6 @@
 
 ## 📁 Estructura del proyecto
 
-<details>
-<summary><b>📂 Haga clic para ver la estructura completa</b></summary>
-
 ```bash
 frontend/
 │
