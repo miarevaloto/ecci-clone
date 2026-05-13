@@ -47,26 +47,38 @@
 | **Vercel** | Hosting y despliegue continuo |
 
 ## 📁 Estructura del proyecto
+
+<details>
+<summary><b>📂 Haga clic para ver la estructura completa</b></summary>
+
+```bash
 frontend/
-├── index.html # Punto de entrada HTML
-├── vite.config.js # Configuración de Vite
-├── package.json # Dependencias y scripts
-├── .gitignore # Archivos ignorados por Git
-└── src/
-├── main.js # Punto de entrada de la app
-├── App.vue # Componente raíz
-├── assets/
-│ └── styles.css # Estilos globales
-└── components/ # Componentes Vue
-├── Navbar.vue
-├── Slider.vue
-├── Facilidades.vue
-├── Solutions.vue
-├── Community.vue
-├── News.vue
-├── UniversityLife.vue
-├── Agenda.vue
-└── FooterInstitutional.vue
+│
+├── 📄 index.html                    # HTML principal
+├── ⚙️ vite.config.js               # Configuración de Vite
+├── 📦 package.json                 # Dependencias (Vue, Vite)
+├── 📦 package-lock.json            # Lock de dependencias
+├── 🙈 .gitignore                   # Archivos ignorados
+│
+└── 📂 src/
+    │
+    ├── 🚀 main.js                  # Punto de entrada Vue
+    ├── 🧩 App.vue                  # Componente raíz
+    │
+    ├── 📂 assets/
+    │   └── 🎨 styles.css          # Estilos globales
+    │
+    └── 📂 components/              # Componentes Vue
+        │
+        ├── 🔷 Navbar.vue           # Barra de navegación
+        ├── 🎠 Slider.vue           # Carrusel de imágenes
+        ├── 🎓 Facilidades.vue      # Sección de facilidades
+        ├── ⚡ Solutions.vue        # Soluciones rápidas
+        ├── 👥 Community.vue        # Comunidad Unieccista
+        ├── 📰 News.vue             # Noticias
+        ├── 🎉 UniversityLife.vue   # Vida universitaria
+        ├── 📅 Agenda.vue           # Agenda de eventos
+        └── 🏛️ FooterInstitutional.vue # Pie de página institucional
 
 text
 
