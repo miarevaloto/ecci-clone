@@ -7,7 +7,7 @@
 
 > **Proyecto demostrativo** - Clon institucional de la página de la Universidad ECCI, desarrollado con Vue 3 + Vite.
 
-![Vista previa del proyecto](https://via.placeholder.com/1200x600/003366/ffffff?text=Universidad+ECCI+Clone)
+![Vista previa del proyecto]([https://via.placeholder.com/1200x600/003366/ffffff?text=Universidad+ECCI+Clone](https://ecci-clone.vercel.app/))
 
 ## ✨ Características
 
