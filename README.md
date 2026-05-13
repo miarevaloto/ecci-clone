@@ -1,104 +1,118 @@
-📘 Proyecto Clon Universidad ECCI
-Este proyecto es un clon institucional de la página de la Universidad ECCI, desarrollado con Vue 3 + Vite en el frontend y Express.js en el backend. Incluye secciones dinámicas como noticias, facilidades académicas, soluciones rápidas, comunidad unieccista, agenda universitaria y footer institucional.
+📘 Proyecto Clon Universidad ECCI (Frontend)
+Este proyecto es un clon institucional de la página de la Universidad ECCI, desarrollado con Vue 3 + Vite.
+Incluye secciones dinámicas como noticias, facilidades académicas, soluciones rápidas, comunidad unieccista, agenda universitaria y footer institucional.
 
 ⚠️ Nota importante:
-Este proyecto es un clon académico/demostrativo.
+Este proyecto es un clon demostrativo.
 
 No es la página oficial de la Universidad ECCI.
 
-Algunos botones y enlaces no funcionan o no llevan a sitios oficiales.
+Algunos botones y enlaces no funcionan o llevan a enlaces aleatorios/demostrativos.
 
-Los accesos a servicios como Directorio Institucional, Preguntas Frecuentes, Portal Laboral, HCM, etc. son placeholders y no redirigen a las páginas reales.
-
-Las imágenes utilizadas son placeholders (Picsum) y no corresponden a contenido oficial.
+Las imágenes son placeholders (Picsum) y no corresponden a contenido oficial.
 
 🚀 Tecnologías utilizadas
-Frontend: Vue 3, Vite, CSS
+Framework: Vue 3 + Vite
 
-Backend: Node.js, Express, CORS
+Lenguaje: JavaScript (ES Modules)
 
 Estilos: CSS modular + paleta institucional (azul #003366, amarillo #ffcc00, gris #f5f5f5)
 
-Imágenes: Picsum (placeholder) + logo ECCI
+Hosting: Vercel (Frontend)
 
 📂 Estructura del proyecto
 Código
-ecci-clone/
- ├─ backend/
- │   └─ server.js
- └─ frontend/
-     ├─ index.html
-     ├─ vite.config.js
-     ├─ package.json
-     └─ src/
-         ├─ main.js
-         ├─ App.vue
-         ├─ assets/
-         │   └─ styles.css
-         └─ components/
-             ├─ Navbar.vue
-             ├─ Slider.vue
-             ├─ Facilidades.vue
-             ├─ Solutions.vue
-             ├─ Community.vue
-             ├─ News.vue
-             ├─ UniversityLife.vue
-             ├─ Agenda.vue
-             └─ FooterInstitutional.vue
-⚙️ Instalación y ejecución
-1. Clonar el repositorio
-bash
-git clone https://github.com/usuario/ecci-clone.git
-cd ecci-clone
-2. Backend
-bash
-cd backend
-npm install
-node server.js
-El backend estará disponible en:
-👉 http://localhost:3000
+frontend/
+ ├─ index.html
+ ├─ vite.config.js
+ ├─ package.json
+ ├─ .gitignore
+ └─ src/
+     ├─ main.js
+     ├─ App.vue
+     ├─ assets/
+     │   └─ styles.css
+     └─ components/
+         ├─ Navbar.vue
+         ├─ Slider.vue
+         ├─ Facilidades.vue
+         ├─ Solutions.vue
+         ├─ Community.vue
+         ├─ News.vue
+         ├─ UniversityLife.vue
+         ├─ Agenda.vue
+         └─ FooterInstitutional.vue
+⚙️ Instalación local
+Clonar el repositorio:
 
-3. Frontend
 bash
-cd ../frontend
+git clone https://github.com/TU_USUARIO/ecci-clone.git
+cd ecci-clone/frontend
+Instalar dependencias:
+
+bash
 npm install
+Ejecutar en modo desarrollo:
+
+bash
 npm run dev
-El frontend estará disponible en:
-👉 http://localhost:5173
+👉 La app estará disponible en http://localhost:5173
 
-🧩 Funcionalidades principales
-Navbar: Barra de navegación con logo institucional.
+🧩 Scripts disponibles
+npm run dev → inicia el servidor de desarrollo con Vite.
 
-Slider: Carrusel de imágenes con transición animada.
+npm run build → genera la carpeta dist lista para producción.
 
-Facilidades: Programas académicos por sede y ciclo.
+npm run preview → sirve la carpeta dist localmente para pruebas.
 
-Solutions: Accesos rápidos a servicios institucionales (no funcionales).
+📌 Configuración de .gitignore
+El proyecto ya incluye un .gitignore que evita subir carpetas innecesarias:
 
-Community: Estadísticas de estudiantes, egresados y programas.
+Código
+node_modules
+dist
+dist-ssr
+*.log
+.vscode/
+.idea
+.DS_Store
+👉 Esto asegura que Vercel genere sus propios node_modules y dist durante el build.
 
-News: Noticias y artículos de actualidad por sede.
+🚀 Despliegue en Vercel
+Subir a GitHub  
+Asegúrate de que tu repositorio contenga el código fuente (src, public, package.json, vite.config.js) pero no node_modules ni dist.
 
-UniversityLife: Servicios y experiencias universitarias.
+Importar en Vercel
 
-Agenda: Eventos académicos y fechas destacadas.
+Inicia sesión en Vercel.
 
-FooterInstitutional: Información legal, sedes y contactos.
+Haz clic en “Add New Project” → “Import Git Repository”.
 
-📌 Limitaciones
-Los botones y enlaces son demostrativos y no llevan a páginas oficiales.
+Selecciona tu repositorio.
 
-El contenido (noticias, eventos, cifras) es simulado.
+Configurar proyecto en Vercel
 
-Las imágenes son placeholders y no corresponden a material institucional real.
+Framework Preset: Vite
+
+Root Directory: frontend
+
+Build Command: npm run build
+
+Output Directory: dist
+
+Deploy automático  
+Vercel instalará dependencias, construirá el proyecto y publicará tu clon en una URL pública:
+
+Código
+https://ecci-clone.vercel.app
+Actualizaciones  
+Cada vez que hagas git push a GitHub, Vercel reconstruirá y desplegará automáticamente la nueva versión.
 
 ✅ Resultado esperado
-Al ejecutar el proyecto verás un clon institucional con:
+Tu clon estará disponible públicamente en Vercel.
 
-Diseño completo desde el navbar hasta el footer.
+El diseño completo desde el navbar hasta el footer institucional será visible.
 
-Contenido dinámico en noticias y agenda.
+Los botones iniciales tendrán funciones básicas (scroll interno o enlaces demostrativos).
 
-Estilo coherente con la identidad visual de la Universidad ECCI.
-
-Botones y enlaces no funcionales, ya que es un clon demostrativo.
+El README aclara que es un clon y que algunos botones no llevan a páginas oficiales.
