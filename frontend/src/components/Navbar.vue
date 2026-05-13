@@ -1,38 +1,60 @@
 <template>
   <nav class="navbar">
-    <img src="/logo-ecci.png" alt="Logo ECCI" class="logo"/>
+    <img src="/logo-ecci.png" alt="Logo ECCI" class="logo" />
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Programas</a></li>
-      <li><a href="#">Noticias</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li>
+        <button @click="goToUniversity('Harvard', 'https://www.harvard.edu')">Inicio</button>
+      </li>
+      <li>
+        <button @click="goToUniversity('Uniandes', 'https://www.uniandes.edu.co')">Programas</button>
+      </li>
+      <li>
+        <button @click="goToUniversity('MIT News', 'https://news.mit.edu')">Noticias</button>
+      </li>
+      <li>
+        <button @click="goToUniversity('UNAL Contacto', 'https://unal.edu.co/contacto')">Contacto</button>
+      </li>
     </ul>
   </nav>
 </template>
 
+<script>
+export default {
+  methods: {
+    goToUniversity(name, url) {
+      alert(`Redirigiendo a ${name}...`);
+      window.open(url, "_blank");
+    }
+  }
+};
+</script>
+
 <style scoped>
 .navbar {
-  background-color: #003366;
-  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #003366;
+  padding: 1rem;
 }
 .logo {
-  height: 50px;
+  height: 40px;
 }
-.navbar ul {
-  display: flex;
+ul {
   list-style: none;
-  gap: 2rem;
-  margin: 0;
+  display: flex;
+  gap: 1rem;
 }
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+button {
+  background: #ffcc00;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #003366;
 }
-.navbar a:hover {
-  border-bottom: 2px solid #ffcc00;
+button:hover {
+  background: #e6b800;
 }
 </style>
