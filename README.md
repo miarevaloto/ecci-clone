@@ -48,7 +48,6 @@
 
 ## 📁 Estructura del proyecto
 
-```bash
 frontend/
 │
 ├── 📄 index.html                    # HTML principal
@@ -77,8 +76,6 @@ frontend/
         ├── 📅 Agenda.vue           # Agenda de eventos
         └── 🏛️ FooterInstitutional.vue # Pie de página institucional
 
-text
-
 ## ⚙️ Instalación y uso local
 
 ### Prerrequisitos
@@ -88,7 +85,6 @@ text
 
 ### Pasos de instalación
 
-```bash
 # 1. Clonar el repositorio
 git clone https://github.com/TU_USUARIO/ecci-clone.git
 
@@ -111,7 +107,6 @@ npm run preview	Previsualiza el build de producción localmente
 Configuración automática
 Sube tu código a GitHub
 
-bash
 git add .
 git commit -m "Initial commit"
 git push origin main
@@ -132,7 +127,6 @@ Build Command	npm run build
 Output Directory	dist
 ¡Listo! Vercel generará una URL como:
 
-text
 https://ecci-clone.vercel.app
 Actualizaciones automáticas
 Cada git push a tu repositorio activará un nuevo despliegue automático en Vercel. 🔄
@@ -165,8 +159,6 @@ Demo en vivo: https://ecci-clone.vercel.app
 Repositorio: github.com/TU_USUARIO/ecci-clone
 
 ⭐ ¡Si te gusta este proyecto, no olvides darle una estrella en GitHub!
-
-text
 
 ## 🔧 Mejoras realizadas
 
