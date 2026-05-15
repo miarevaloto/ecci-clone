@@ -6,24 +6,65 @@
         <button @click="goToUniversity('Inicios', 'https://es.wikipedia.org/wiki/Universidad')">Inicio</button>
       </li>
       <li>
-        <button @click="goToUniversity('Programas de Ingeniería', 'https://www.google.com/search?q=PROGRAMAS+DE+INGENIERIA+EN+COLOMBIA&oq=PROGRAMAS+DE+INGENIERIA+EN+COLOMBIA&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEyNzM1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8')">Programas</button>
+        <button @click="goToUniversity('Programas de Ingeniería', 'https://www.google.com/search?q=PROGRAMAS+DE+INGENIERIA+EN+COLOMBIA')">Programas</button>
       </li>
       <li>
-        <button @click="goToUniversity('Noticias Universidades Bogota', 'https://www.google.com/search?q=noticias+universidades+en+bogota+colombia&sca_esv=e1aed3f059b28a74&biw=1920&bih=953&sxsrf=ANbL-n6OAMdotlLHFgivcxGAZ_tNKymeXA%3A1778859549131&ei=HT4HatnBB7WXwbkPuLij2Qw&oq=noticias+universidades+en+bogota&gs_lp=Egxnd3Mtd2l6LXNlcnAiIG5vdGljaWFzIHVuaXZlcnNpZGFkZXMgZW4gYm9nb3RhKgIIATIFECEYoAEyBRAhGKABMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBUiMNFCtCljOJXABeAGQAQCYAZQBoAHhDaoBBDAuMTS4AQPIAQD4AQGYAg-gApoOwgIKEAAYRxjWBBiwA8ICBhAAGBYYHsICCBAAGIAEGKIEwgIFEAAY7wWYAwCIBgGQBgiSBwQxLjE0oAeRNLIHBDAuMTS4B5YOwgcGMC4xMi4zyAcigAgB&sclient=gws-wiz-serp')">Noticias</button>
+        <button @click="goToUniversity('Noticias Universidades Bogota', 'https://www.google.com/search?q=noticias+universidades+en+bogota')">Noticias</button>
       </li>
       <li>
-        <button @click="goToUniversity('Contactos', 'https://www.google.com/search?q=contactos+universidades&sca_esv=e1aed3f059b28a74&sxsrf=ANbL-n6W78zWzNwiCh7stXyQ4mX2g3kNDQ:1778859651784&udm=1&lsack=gz4Hat6yL4T8wbkP-O6N8Qs&sa=X&ved=2ahUKEwiegJnN0LuUAxUEfjABHXh3I74QjGp6BAgsEAA&biw=1920&bih=953&dpr=1')">Contacto</button>
+        <!-- Aquí cambiamos la acción: en vez de abrir URL, mostramos el modal -->
+        <button @click="showContactForm = true">Contacto</button>
       </li>
     </ul>
   </nav>
+
+  <!-- Modal emergente -->
+  <div v-if="showContactForm" class="modal-overlay">
+    <div class="modal">
+      <h2>Formulario de Contacto</h2>
+      <form @submit.prevent="submitForm">
+        <label>
+          Nombre:
+          <input type="text" v-model="contact.name" required />
+        </label>
+        <label>
+          Correo:
+          <input type="email" v-model="contact.email" required />
+        </label>
+        <label>
+          Mensaje:
+          <textarea v-model="contact.message" required></textarea>
+        </label>
+        <div class="actions">
+          <button type="submit">Enviar</button>
+          <button type="button" @click="showContactForm = false">Cerrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      showContactForm: false,
+      contact: {
+        name: "",
+        email: "",
+        message: ""
+      }
+    };
+  },
   methods: {
     goToUniversity(name, url) {
       alert(`Redirigiendo a ${name}...`);
       window.open(url, "_blank");
+    },
+    submitForm() {
+      alert(`Gracias ${this.contact.name}, tu mensaje ha sido enviado.`);
+      this.showContactForm = false;
+      // Aquí podrías agregar lógica para enviar los datos a un backend
     }
   }
 };
@@ -56,5 +97,44 @@ button {
 }
 button:hover {
   background: #e6b800;
+}
+
+/* Estilos del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+.modal h2 {
+  margin-bottom: 1rem;
+}
+.modal label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.modal input, .modal textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 </style>
