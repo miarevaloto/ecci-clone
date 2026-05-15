@@ -6,7 +6,7 @@
         <button @click="goToUniversity('Harvard', 'https://www.harvard.edu')">Inicio</button>
       </li>
       <li>
-        <button @click="goToUniversity('Uniandes', 'https://www.uniandes.edu.co')">Programas</button>
+        <button @click="goToUniversity('Programas de Ingeniería', 'https://www.google.com/search?q=PROGRAMAS+DE+INGENIERIA+EN+COLOMBIA&oq=PROGRAMAS+DE+INGENIERIA+EN+COLOMBIA&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEyNzM1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8')">Programas</button>
       </li>
       <li>
         <button @click="goToUniversity('MIT News', 'https://news.mit.edu')">Noticias</button>
