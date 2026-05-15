@@ -7,86 +7,89 @@
 
 > **Proyecto demostrativo** - Clon institucional de la página de la Universidad ECCI, desarrollado con Vue 3 + Vite.
 
-![Vista previa del proyecto]
-https://ecci-clone.vercel.app/
+🌐 **Demo en vivo:** [ecci-clone.vercel.app](https://ecci-clone.vercel.app)
 
-## ✨ Características
+---
 
-- 🎯 **Diseño fiel** - Réplica de la interfaz institucional con paleta de colores oficial
-- 📱 **Responsive** - Adaptación a diferentes tamaños de pantalla
-- 🧩 **Componentes modulares** - Arquitectura basada en componentes Vue reutilizables
-- ⚡ **Rendimiento optimizado** - Uso de Vite para builds rápidos y hot-reload
-- 🎨 **Paleta institucional** - Azul `#003366`, amarillo `#ffcc00`, gris `#f5f5f5`
+## ✨ Características principales
 
-### Secciones implementadas
+- 🎯 **Diseño fiel**: réplica de la interfaz institucional con paleta oficial  
+- 📱 **Responsive**: adaptación a móviles, tablets y escritorio  
+- 🧩 **Componentes modulares**: arquitectura Vue reutilizable  
+- ⚡ **Rendimiento optimizado**: Vite para builds rápidos y hot-reload  
+- 🎨 **Paleta institucional**: Azul `#003366`, Amarillo `#ffcc00`, Gris `#f5f5f5`  
 
-- ✅ Barra de navegación institucional
-- ✅ Slider/Carrusel principal
-- ✅ Noticias destacadas
-- ✅ Facilidades académicas
-- ✅ Soluciones rápidas
-- ✅ Comunidad Unieccista
-- ✅ Agenda universitaria
-- ✅ Footer institucional completo
+---
+
+## 📌 Secciones implementadas
+
+- ✅ Barra de navegación institucional  
+- ✅ Slider/Carrusel principal  
+- ✅ Noticias destacadas  
+- ✅ Facilidades académicas  
+- ✅ Soluciones rápidas  
+- ✅ Comunidad Unieccista  
+- ✅ Agenda universitaria  
+- ✅ Footer institucional completo  
+
+---
 
 ## ⚠️ Aviso importante
 
-> Este es un **clon demostrativo** con fines educativos y de portafolio.
->
-> - ❌ No es la página oficial de la Universidad ECCI
-> - 🔗 Algunos botones y enlaces son demostrativos o direccionan a URLs aleatorias
-> - 🖼️ Las imágenes son placeholder de [Picsum](https://picsum.photos/) y no representan contenido oficial
+Este es un **clon demostrativo** con fines educativos y de portafolio.  
+- ❌ No es la página oficial de la Universidad ECCI  
+- 🔗 Algunos botones y enlaces son demostrativos o direccionan a URLs genéricas  
+- 🖼️ Las imágenes provienen de [Picsum](https://picsum.photos/) como placeholders  
+
+---
 
 ## 🚀 Tecnologías utilizadas
 
 | Tecnología | Descripción |
 |------------|-------------|
-| **Vue 3** | Framework progresivo de JavaScript |
-| **Vite** | Build tool y servidor de desarrollo |
-| **JavaScript (ES Modules)** | Lógica de componentes |
-| **CSS Modular** | Estilos encapsulados por componente |
-| **Vercel** | Hosting y despliegue continuo |
+| **[Vue 3](ca://s?q=Aprender_más_sobre_Vue_3)** | Framework progresivo de JavaScript |
+| **[Vite](ca://s?q=Qué_es_Vite)** | Build tool y servidor de desarrollo |
+| **[JavaScript ES6+](ca://s?q=Características_de_JavaScript_ES6)** | Lógica de componentes |
+| **CSS Scoped** | Estilos encapsulados por componente |
+| **[Vercel](ca://s?q=Cómo_funciona_Vercel)** | Hosting y despliegue continuo |
+
+---
 
 ## 📁 Estructura del proyecto
 
-## 📁 Estructura del proyecto
+```plaintext
+frontend/
+├─ index.html              # Punto de entrada HTML
+├─ vite.config.js          # Configuración de Vite
+├─ package.json            # Dependencias y scripts
+├─ .gitignore              # Archivos ignorados por Git
+└─ src/
+   ├─ main.js              # Punto de entrada de la app
+   ├─ App.vue              # Componente raíz
+   ├─ assets/              # Recursos estáticos
+   │  └─ styles.css        # Estilos globales
+   └─ components/          # Componentes Vue reutilizables
+      ├─ Navbar.vue        # Barra de navegación
+      ├─ Slider.vue        # Carrusel principal
+      ├─ Facilidades.vue   # Sección de facilidades
+      ├─ Solutions.vue     # Soluciones rápidas
+      ├─ Community.vue     # Comunidad Unieccista
+      ├─ News.vue          # Noticias destacadas
+      ├─ UniversityLife.vue# Vida universitaria
+      ├─ Agenda.vue        # Agenda universitaria
+      └─ FooterInstitutional.vue # Pie de página
+⚙️ Instalación y uso local
+Prerrequisitos
+Node.js (v18 o superior)
 
-| Ruta | Descripción |
-|------|-------------|
-| `frontend/` | Raíz del proyecto frontend |
-| ├─ `index.html` | Punto de entrada HTML |
-| ├─ `vite.config.js` | Configuración de Vite |
-| ├─ `package.json` | Dependencias y scripts |
-| ├─ `.gitignore` | Archivos ignorados por Git |
-| └─ `src/` | Código fuente principal |
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ `main.js` | Punto de entrada de la app |
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ `App.vue` | Componente raíz |
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ `assets/` | Recursos estáticos |
-| &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─ `styles.css` | Estilos globales |
-| &nbsp;&nbsp;&nbsp;&nbsp;└─ `components/` | Componentes Vue reutilizables |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Navbar.vue` | Barra de navegación |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Slider.vue` | Carrusel principal |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Facilidades.vue` | Sección de facilidades |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Solutions.vue` | Soluciones rápidas |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Community.vue` | Comunidad Unieccista |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `News.vue` | Noticias destacadas |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `UniversityLife.vue` | Vida universitaria |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ `Agenda.vue` | Agenda universitaria |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ `FooterInstitutional.vue` | Pie de página |
+npm o yarn
 
-## ⚙️ Instalación y uso local
-
-### Prerrequisitos
-- Node.js (versión 18 o superior)
-- npm o yarn
-
-### Pasos de instalación
-
-```bash
+Pasos de instalación
+bash
 # 1. Clonar el repositorio
 git clone https://github.com/TU_USUARIO/ecci-clone.git
 
-# 2. Acceder al directorio del frontend
+# 2. Acceder al directorio
 cd ecci-clone/frontend
 
 # 3. Instalar dependencias
@@ -101,43 +104,24 @@ Comando	Descripción
 npm run dev	Inicia servidor de desarrollo con hot-reload
 npm run build	Genera build de producción en dist/
 npm run preview	Previsualiza el build de producción localmente
+
+
 🚢 Despliegue en Vercel
 1️⃣ Sube tu código a GitHub
-bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-2️⃣ Importa el proyecto en Vercel
-Ve a vercel.com
+2️⃣ Importa el proyecto en Vercel  
+3️⃣ Configuración recomendada:
 
-Haz clic en "Add New" → "Project"
+Framework Preset: Vite
 
-Selecciona tu repositorio
+Root Directory: frontend
 
-3️⃣ Configuración recomendada
-Parámetro	Valor
-Framework Preset	Vite
-Root Directory	frontend
-Build Command	npm run build
-Output Directory	dist
-4️⃣ ¡Listo!
-Vercel generará una URL como:
+Build Command: npm run build
 
-text
-https://ecci-clone.vercel.app
+Output Directory: dist
+4️⃣ ¡Listo! Vercel generará una URL pública como:
+👉 https://ecci-clone.vercel.app
 
-🔄 Actualizaciones automáticas
-Cada git push a tu repositorio activará un nuevo despliegue automático en Vercel.
-
-📝 .gitignore incluido
-gitignore
-node_modules/
-dist/
-dist-ssr/
-*.log
-.vscode/
-.idea/
-.DS_Store
+🔄 Cada git push activará un nuevo despliegue automático.
 
 🎯 Resultado esperado
 ✅ Interfaz completa desde navbar hasta footer
@@ -149,24 +133,14 @@ dist-ssr/
 ✅ Disponible públicamente en Vercel
 
 📄 Licencia
-Este proyecto es de uso educativo y demostrativo. No está afiliado oficialmente con la Universidad ECCI.
+Este proyecto es de uso educativo y demostrativo.
+No está afiliado oficialmente con la Universidad ECCI.
 
 🙌 Créditos
-Desarrollado como proyecto de portafolio utilizando Vue 3 y Vite.
+Desarrollado como proyecto de portafolio utilizando Vue 3 + Vite.
 
-Demo en vivo: https://ecci-clone.vercel.app
+🌐 Demo en vivo: ecci-clone.vercel.app
 
-Repositorio: github.com/TU_USUARIO/ecci-clone
+📂 Repositorio: github.com/TU_USUARIO/ecci-clone
 
 ⭐ ¡Si te gusta este proyecto, no olvides darle una estrella en GitHub!
-
-text
-
-## 🔑 Los problemas que corregí:
-
-1. **Bloques de código mal cerrados** - Ahora cada ` ```bash ` tiene su ` ``` ` de cierre
-2. **Saltos de línea incorrectos** - Separé las secciones con `---` para mayor claridad
-3. **Texto suelto** - Moví "La aplicación estará disponible" fuera del bloque de código
-4. **Jerarquía visual** - Usé `###` para subsecciones y `---` como separadores
-5. **Listas numeradas** - Usé `1️⃣ 2️⃣ 3️⃣ 4️⃣` para los pasos de Vercel
-6. **Enlaces** - Formateé correctamente los links con `[texto](url)`
