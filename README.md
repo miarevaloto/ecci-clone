@@ -141,6 +141,6 @@ Desarrollado como proyecto de portafolio utilizando Vue 3 + Vite.
 
 🌐 Demo en vivo: ecci-clone.vercel.app
 
-📂 Repositorio: github.com/TU_USUARIO/ecci-clone
+📂 Repositorio: github.com/miarevaloto/ecci-clone
 
 ⭐ ¡Si te gusta este proyecto, no olvides darle una estrella en GitHub!
