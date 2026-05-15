@@ -25,16 +25,6 @@
       <button class="btn" @click="goToUniversity('Eventos', 'https://es.wikipedia.org/wiki/Universidad')">Ver más eventos</button>
     </div>
   </section>
-<script>
-export default {
-  methods: {
-    goToUniversity(name, url) {
-      alert(`Redirigiendo a ${name}...`);
-      window.open(url, "_blank");
-    }
-  }
-};
-</script>
 </template>
 
 <script>
@@ -64,6 +54,14 @@ export default {
         }
       ]
     };
+  }
+};
+export default {
+  methods: {
+    goToUniversity(name, url) {
+      alert(`Redirigiendo a ${name}...`);
+      window.open(url, "_blank");
+    }
   }
 };
 </script>
