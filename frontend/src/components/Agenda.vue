@@ -22,11 +22,9 @@
     </div>
 
     <div class="center">
-      <button class="btn", @click="goToUniversity('Eventos', 'https://es.wikipedia.org/wiki/Universidad')">Ver más eventos</button>
+      <button class="btn" @click="goToUniversity('Eventos', 'https://es.wikipedia.org/wiki/Universidad')">Ver más eventos</button>
     </div>
   </section>
-</template>
-
 <script>
 export default {
   methods: {
@@ -37,6 +35,7 @@ export default {
   }
 };
 </script>
+</template>
 
 <script>
 export default {
