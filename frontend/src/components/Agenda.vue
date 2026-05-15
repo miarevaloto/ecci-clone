@@ -55,7 +55,7 @@ export default {
       ]
     };
   }
-};
+},
 export default {
   methods: {
     goToUniversity(name, url) {
