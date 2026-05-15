@@ -56,8 +56,7 @@ export default {
     };
   }
 },
-export default {
-  methods: {
+methods: {
     goToUniversity(name, url) {
       alert(`Redirigiendo a ${name}...`);
       window.open(url, "_blank");
