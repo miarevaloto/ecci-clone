@@ -22,7 +22,7 @@
     </div>
 
     <div class="center">
-      <button class="btn" @click="goToUniversity('Eventos', 'https://es.wikipedia.org/wiki/Universidad')">Ver más eventos</button>
+      <button class="btn" @click="goToUniversity('Eventos', 'https://www.google.com/search?q=eventos+universidades&oq=eventos+universidades&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQ3NjdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Ver más eventos</button>
     </div>
   </section>
 </template>
