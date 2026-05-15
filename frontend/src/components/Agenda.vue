@@ -29,6 +29,17 @@
 
 <script>
 export default {
+  methods: {
+    goToUniversity(name, url) {
+      alert(`Redirigiendo a ${name}...`);
+      window.open(url, "_blank");
+    }
+  }
+};
+</script>
+
+<script>
+export default {
   data() {
     return {
       cities: ["Bogotá", "Cali", "Medellín"],
